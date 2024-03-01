@@ -13,10 +13,10 @@ import java.util.Date;
 
 public class TakeScreenShort {
 
-    public static void takeScreenshot(AppiumDriver<MobileElement> driver, String testName) {
+    public  void takeScreenshot(AppiumDriver<MobileElement> driver, String testName) {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String screenshotDir = "screenshots/";
+        String screenshotDir = "Reports/Screenshots/";
 
         File directory = new File(screenshotDir);
         if (!directory.exists()) {

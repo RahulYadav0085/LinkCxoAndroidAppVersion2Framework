@@ -4,6 +4,8 @@ import java.io.IOException;
 import java.text.ParseException;
 
 import org.testng.annotations.Test;
+
+import com.linkcxo.appiumsetup.TakeScreenShort;
 import com.linkcxo.pages.LoginPageViaEmail;
 import com.linkcxo.utils.ConfigReader;
 import com.linkcxo.utils.ExcelReader;
@@ -18,12 +20,17 @@ public class BaseTest extends com.linkcxo.appiumsetup.AppiumBasePageSetup {
 //		JsonReader json=new JsonReader();
 //		String EMAIL1=json.gettestvalue("EMAIL");
 	ConfigReader con=new ConfigReader();
-//		ExcelReader excel=new ExcelReader();
-//		excel.getexcelvalue()
-		
+
+		try {
 		email=new LoginPageViaEmail(driver);
 	 
 		email.loginwithemail(con.getconfigvalue());
+		}catch(Exception e) {
+			TakeScreenShort image=new TakeScreenShort();
+			image.takeScreenshot(driver, "ERROR");
+			throw e;
+		}
+		
 	}
 	
 }

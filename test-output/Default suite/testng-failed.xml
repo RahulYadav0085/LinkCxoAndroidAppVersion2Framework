@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="LinkCxoAndroidAppFramework.LinkCxoAndroidAppFramework.BaseTest">
+      <class name="com.linkcxo.testscript.BaseTest">
         <methods>
-          <include name="linkcxo"/>
-          <include name="teardown"/>
           <include name="setup"/>
+          <include name="teardown"/>
+          <include name="linkcxo"/>
         </methods>
-      </class> <!-- LinkCxoAndroidAppFramework.LinkCxoAndroidAppFramework.BaseTest -->
+      </class> <!-- com.linkcxo.testscript.BaseTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

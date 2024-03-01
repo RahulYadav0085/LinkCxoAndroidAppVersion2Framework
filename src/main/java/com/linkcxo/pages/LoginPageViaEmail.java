@@ -1,54 +1,52 @@
 package com.linkcxo.pages;
 
-import org.openqa.selenium.By;
+import java.io.File;
+import java.io.IOException;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.AppiumDriver;
-import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 
 
 public class LoginPageViaEmail {
 	AppiumDriver<MobileElement> driver;
-	public LoginPageViaEmail(AppiumDriver <MobileElement>driver) {
-		this.driver=driver;
+	public LoginPageViaEmail(AppiumDriver <MobileElement>d) {
+		driver=d;
+		PageFactory.initElements(driver, this);
 	
 	}
-
 	
-	By Logintxt=MobileBy.xpath("//android.widget.TextView[@text='Continue with Email or Mobile No.']");
-	By LoginEntry=MobileBy.xpath("//android.widget.EditText[@text='Your Email or Mobile No']");
-    By Loginbtn=MobileBy.xpath("//android.widget.Button[@content-desc=\"Continue to Send OTP\"]/android.widget.TextView");	
-//	@AndroidFindBy(xpath = "//android.widget.TextView[@text='Continue with Email or Mobile No.']")
-//      private MobileElement Logintxt;
-//	 
-//	 @AndroidFindBy(xpath = "//android.widget.EditText[@text='Your Email or Mobile No']")
-//	 private MobileElement LoginEntry;
-//	 
-//	 @AndroidFindBy(xpath = "//android.widget.Button[@content-desc=\"Continue to Send OTP\"]/android.widget.TextView")
-//	 private MobileElement Loginbtn;
-//	
+	@FindBy(xpath = "//android.widget.TextView[@text='Continue with Email or Mobile No.']")
+           WebElement Logintxt;
+	 
+	 @FindBy(xpath = "//android.widget.EditText[@text='Your Email or Mobile No']")
+	        WebElement LoginEntry;
+	 
+	 @FindBy(xpath = "//android.widget.Button[@content-desc=\"Continue to Send OTP\"]/android.widget.TextView")
+	       WebElement Loginbtn;
+	
 	
 	public void loginwithemail(String Email) throws InterruptedException {
-	 driver.findElement(Logintxt).click();
-	Thread.sleep(1000);
-	driver.findElement(LoginEntry).click();
-
-	Thread.sleep(1000);
-	driver.findElement(LoginEntry).sendKeys(Email);
-	
-	TakesScreenShot src=(TakesScreenShot)driver;
-	
-	Thread.sleep(1000);
-    driver.findElement(Loginbtn).click();
-	Thread.sleep(1000);
-//		Logintxt.click();
-//		Thread.sleep(1000);
-//		LoginEntry.click();
-//		Thread.sleep(1000);
-//		LoginEntry.sendKeys(Email);
-//		Thread.sleep(1000);
-//		Loginbtn.click();
-//		
-	
+		Logintxt.click();
+		Thread.sleep(1000);
+		LoginEntry.click();
+		Thread.sleep(1000);
+		LoginEntry.sendKeys(Email);
+		Thread.sleep(1000);
+		Loginbtn.click();
 	}
+		
+	 public void screenshotimage() throws IOException {
+		 File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+			String screenshotPath = "C:\\Users\\rahul\\eclipse-workspace\\LinkCxoAndroidAppVersion2Framework\\target\\websiteScreenshot.png";
+			FileUtils.moveDirectory(screenshotFile, screenshotFile);
+			 
+		 }
+	
+	
+	
 }
