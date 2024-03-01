@@ -1,4 +1,4 @@
-package com.linkcxo.core;
+package com.linkcxo.appiumsetup;
 
 import java.net.MalformedURLException;
 import java.net.URL;

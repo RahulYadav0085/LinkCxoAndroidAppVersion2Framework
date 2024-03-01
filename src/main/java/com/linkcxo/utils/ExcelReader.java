@@ -12,7 +12,7 @@ import org.testng.annotations.DataProvider;
 
 public class ExcelReader {
 	 
- public Object[][] readexcel() throws IOException{	
+ public Object[][] getexcelvalue() throws IOException{	
 	    FileInputStream file = new FileInputStream("C:\\Users\\rahul\\git\\repository\\LinkCxo_Android_App_Framework\\CoreData\\readdata.xlsx");
         XSSFWorkbook workbook = new XSSFWorkbook(file);
         XSSFSheet sheet = workbook.getSheet("sheet1");

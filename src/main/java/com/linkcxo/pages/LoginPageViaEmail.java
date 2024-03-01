@@ -1,6 +1,7 @@
 package com.linkcxo.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.TakesScreenshot;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
@@ -34,6 +35,8 @@ public class LoginPageViaEmail {
 
 	Thread.sleep(1000);
 	driver.findElement(LoginEntry).sendKeys(Email);
+	
+	TakesScreenShot src=(TakesScreenShot)driver;
 	
 	Thread.sleep(1000);
     driver.findElement(Loginbtn).click();
