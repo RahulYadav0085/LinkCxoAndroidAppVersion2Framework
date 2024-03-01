@@ -1,12 +1,10 @@
 package com.linkcxo.pages;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.support.PageFactory;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
-import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+
 
 public class LoginPageViaEmail {
 	AppiumDriver<MobileElement> driver;

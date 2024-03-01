@@ -5,9 +5,9 @@
     <classes>
       <class name="LinkCxoAndroidAppFramework.LinkCxoAndroidAppFramework.BaseTest">
         <methods>
-          <include name="setup"/>
           <include name="linkcxo"/>
           <include name="teardown"/>
+          <include name="setup"/>
         </methods>
       </class> <!-- LinkCxoAndroidAppFramework.LinkCxoAndroidAppFramework.BaseTest -->
     </classes>

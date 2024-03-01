@@ -1,33 +1,26 @@
 package LinkCxoAndroidAppFramework.LinkCxoAndroidAppFramework;
 
-import java.net.MalformedURLException;
-import java.net.URL;
-import java.util.concurrent.TimeUnit;
+import java.io.IOException;
+import java.text.ParseException;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeSuite;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.linkcxo.pages.LoginPageViaEmail;
-import com.linkcxo.utils.AppiumBasePageSetup;
+import com.linkcxo.utils.ConfigReader;
+import com.linkcxo.utils.JsonReader;
 
-import io.appium.java_client.AppiumDriver;
-
-public class BaseTest extends AppiumBasePageSetup {
+public class BaseTest extends com.linkcxo.core.AppiumBasePageSetup {
       LoginPageViaEmail email;
 	
 	
 	@Test
-	public void linkcxo() throws InterruptedException {
+	public void linkcxo() throws IOException, ParseException, org.json.simple.parser.ParseException, InterruptedException {
+//		JsonReader json=new JsonReader();
+//		String EMAIL1=json.gettestvalue("EMAIL");
+		ConfigReader con=new ConfigReader();
+		
 		email=new LoginPageViaEmail(driver);
 	 
-		email.loginwithemail("kprabhat956@gmail.com");
-			
+		email.loginwithemail(con.getconfigvalue());
 	}
 	
 }

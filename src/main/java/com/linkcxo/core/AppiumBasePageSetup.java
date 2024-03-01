@@ -1,4 +1,4 @@
-package com.linkcxo.utils;
+package com.linkcxo.core;
 
 import java.net.MalformedURLException;
 import java.net.URL;
