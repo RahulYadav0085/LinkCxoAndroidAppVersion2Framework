@@ -16,7 +16,7 @@ public class TakeScreenShort {
     public  void takeScreenshot(AppiumDriver<MobileElement> driver, String testName) {
         String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        String screenshotDir = "Reports/Screenshots/";
+        String screenshotDir = "Reports//Screenshot//";
 
         File directory = new File(screenshotDir);
         if (!directory.exists()) {

@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.linkcxo.testscript.BaseTest">
+      <class name="com.linkcxo.testscript.BaseTestCases">
         <methods>
-          <include name="setup"/>
-          <include name="teardown"/>
-          <include name="linkcxo"/>
+          <include name="run"/>
         </methods>
-      </class> <!-- com.linkcxo.testscript.BaseTest -->
+      </class> <!-- com.linkcxo.testscript.BaseTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

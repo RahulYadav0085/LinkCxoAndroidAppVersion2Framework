@@ -1,17 +1,25 @@
 package com.linkcxo.appiumsetup;
 
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.linkcxo.signup.module.LoginPageViaEmail;
+import com.linkcxo.signup.module.SignupPageViaEmail;
+import com.linkcxo.utils.ConfigReader;
+
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 
 public class AppiumBasePageSetup {
-	protected AppiumDriver<MobileElement> driver;
-
+	 public AppiumDriver<MobileElement> driver;
+	
+	
 	@BeforeTest
 	public void setup() throws MalformedURLException {
 		DesiredCapabilities cap=new DesiredCapabilities();

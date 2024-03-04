@@ -51,13 +51,13 @@ public void signupwithemail() throws InterruptedException {
 	Thread.sleep(1000);
 	Designationtxt.click();
 	Thread.sleep(1000);
-	Scrolltxt.click();
-	Thread.sleep(1000);
-	Experiencetxt.click();
-	Thread.sleep(1000);
-	Phonetxt.click();
-	Thread.sleep(1000);
-	Socialtxt.click();
+	//Scrolltxt.click();
+	//Thread.sleep(1000);
+//	Experiencetxt.click();
+//	Thread.sleep(1000);
+//	Phonetxt.click();
+//	Thread.sleep(1000);
+//	Socialtxt.click();
 	
 }
 

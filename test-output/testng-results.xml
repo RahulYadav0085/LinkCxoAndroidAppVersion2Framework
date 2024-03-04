@@ -2,64 +2,23 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-04T13:03:32 IST" name="Default suite" finished-at="2024-03-04T13:04:07 IST" duration-ms="34950">
+  <suite started-at="2024-03-04T16:21:39 IST" name="Default suite" finished-at="2024-03-04T16:21:39 IST" duration-ms="58">
     <groups>
     </groups>
-    <test started-at="2024-03-04T13:03:32 IST" name="Default test" finished-at="2024-03-04T13:04:07 IST" duration-ms="34950">
-      <class name="com.linkcxo.testscript.BaseTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.linkcxo.testscript.BaseTest@67f639d3]" started-at="2024-03-04T13:03:32 IST" name="setup" finished-at="2024-03-04T13:03:39 IST" duration-ms="7418" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="linkcxo()[pri:0, instance:com.linkcxo.testscript.BaseTest@67f639d3]" started-at="2024-03-04T13:03:39 IST" name="linkcxo" finished-at="2024-03-04T13:04:06 IST" duration-ms="27018" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+    <test started-at="2024-03-04T16:21:39 IST" name="Default test" finished-at="2024-03-04T16:21:39 IST" duration-ms="58">
+      <class name="com.linkcxo.testscript.BaseTestCases">
+        <test-method signature="run()[pri:0, instance:com.linkcxo.testscript.BaseTestCases@2fb3536e]" started-at="2024-03-04T16:21:39 IST" name="run" finished-at="2024-03-04T16:21:39 IST" duration-ms="29" status="FAIL">
+          <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LX-BLR-LT-002', ip: '10.36.56.253', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: io.appium.java_client.AppiumDriver
-Capabilities {PlatformVersion: 14, app: D://LinkCxO//application.apk, appPackage: com.kailas_surve.myapp, databaseEnabled: false, desired: {PlatformVersion: 14, app: D://LinkCxO//application.apk, deviceName: LinkCxoPhone, platformName: android, udid: emulator-5554}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1794, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 91f175e7-7c8b-4d61-b044-355da0b810df
-*** Element info: {Using=id, value=otp_input_0}]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'LX-BLR-LT-002', ip: '10.36.56.253', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
-Driver info: io.appium.java_client.AppiumDriver
-Capabilities {PlatformVersion: 14, app: D://LinkCxO//application.apk, appPackage: com.kailas_surve.myapp, databaseEnabled: false, desired: {PlatformVersion: 14, app: D://LinkCxO//application.apk, deviceName: LinkCxoPhone, platformName: android, udid: emulator-5554}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1794, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 91f175e7-7c8b-4d61-b044-355da0b810df
-*** Element info: {Using=id, value=otp_input_0}
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:247)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
-at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
-at org.openqa.selenium.By$ById.findElement(By.java:188)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at com.linkcxo.signup.module.LoginPageViaEmail.otpmethod(LoginPageViaEmail.java:55)
-at com.linkcxo.testscript.BaseTest.linkcxo(BaseTest.java:31)
+at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+at com.linkcxo.signup.module.LoginPageViaEmail.loginwithemail(LoginPageViaEmail.java:44)
+at com.linkcxo.testscript.BaseTestCases.run(BaseTestCases.java:28)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -90,15 +49,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- linkcxo -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.linkcxo.testscript.BaseTest@67f639d3]" started-at="2024-03-04T13:04:06 IST" name="teardown" finished-at="2024-03-04T13:04:07 IST" duration-ms="482" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.linkcxo.testscript.BaseTest -->
+        </test-method> <!-- run -->
+      </class> <!-- com.linkcxo.testscript.BaseTestCases -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
