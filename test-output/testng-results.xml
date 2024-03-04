@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-01T16:33:57 IST" name="Default suite" finished-at="2024-03-01T16:34:30 IST" duration-ms="33088">
+  <suite started-at="2024-03-04T13:03:32 IST" name="Default suite" finished-at="2024-03-04T13:04:07 IST" duration-ms="34950">
     <groups>
     </groups>
-    <test started-at="2024-03-01T16:33:57 IST" name="Default test" finished-at="2024-03-01T16:34:30 IST" duration-ms="33088">
+    <test started-at="2024-03-04T13:03:32 IST" name="Default test" finished-at="2024-03-04T13:04:07 IST" duration-ms="34950">
       <class name="com.linkcxo.testscript.BaseTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.linkcxo.testscript.BaseTest@31fa1761]" started-at="2024-03-01T16:33:57 IST" name="setup" finished-at="2024-03-01T16:34:06 IST" duration-ms="9154" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.linkcxo.testscript.BaseTest@67f639d3]" started-at="2024-03-04T13:03:32 IST" name="setup" finished-at="2024-03-04T13:03:39 IST" duration-ms="7418" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="linkcxo()[pri:0, instance:com.linkcxo.testscript.BaseTest@31fa1761]" started-at="2024-03-01T16:34:06 IST" name="linkcxo" finished-at="2024-03-01T16:34:29 IST" duration-ms="23413" status="FAIL">
+        <test-method signature="linkcxo()[pri:0, instance:com.linkcxo.testscript.BaseTest@67f639d3]" started-at="2024-03-04T13:03:39 IST" name="linkcxo" finished-at="2024-03-04T13:04:06 IST" duration-ms="27018" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[An element could not be located on the page using the given search parameters.
@@ -20,8 +20,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'LX-BLR-LT-002', ip: '10.36.56.253', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {PlatformVersion: 14, app: D://LinkCxO//application.apk, appPackage: com.kailas_surve.myapp, databaseEnabled: false, desired: {PlatformVersion: 14, app: D://LinkCxO//application.apk, deviceName: LinkCxoPhone, platformName: android, udid: emulator-5554}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1794, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 66576b23-2962-4b86-a6e4-20b61d54267c
-*** Element info: {Using=xpath, value=//android.widget.EditText[@text23='Your Email or Mobile No']}]]>
+Session ID: 91f175e7-7c8b-4d61-b044-355da0b810df
+*** Element info: {Using=id, value=otp_input_0}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters.
@@ -30,8 +30,8 @@ Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17
 System info: host: 'LX-BLR-LT-002', ip: '10.36.56.253', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {PlatformVersion: 14, app: D://LinkCxO//application.apk, appPackage: com.kailas_surve.myapp, databaseEnabled: false, desired: {PlatformVersion: 14, app: D://LinkCxO//application.apk, deviceName: LinkCxoPhone, platformName: android, udid: emulator-5554}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1794, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 66576b23-2962-4b86-a6e4-20b61d54267c
-*** Element info: {Using=xpath, value=//android.widget.EditText[@text23='Your Email or Mobile No']}
+Session ID: 91f175e7-7c8b-4d61-b044-355da0b810df
+*** Element info: {Using=id, value=otp_input_0}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -48,18 +48,18 @@ at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
 at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+at org.openqa.selenium.By$ById.findElement(By.java:188)
 at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-at com.linkcxo.pages.LoginPageViaEmail.loginwithemail(LoginPageViaEmail.java:38)
-at com.linkcxo.testscript.BaseTest.linkcxo(BaseTest.java:27)
+at com.linkcxo.signup.module.LoginPageViaEmail.otpmethod(LoginPageViaEmail.java:55)
+at com.linkcxo.testscript.BaseTest.linkcxo(BaseTest.java:31)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -94,7 +94,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- linkcxo -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.linkcxo.testscript.BaseTest@31fa1761]" started-at="2024-03-01T16:34:29 IST" name="teardown" finished-at="2024-03-01T16:34:30 IST" duration-ms="466" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.linkcxo.testscript.BaseTest@67f639d3]" started-at="2024-03-04T13:04:06 IST" name="teardown" finished-at="2024-03-04T13:04:07 IST" duration-ms="482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

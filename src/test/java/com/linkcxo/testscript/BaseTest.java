@@ -6,13 +6,15 @@ import java.text.ParseException;
 import org.testng.annotations.Test;
 
 import com.linkcxo.appiumsetup.TakeScreenShort;
-import com.linkcxo.pages.LoginPageViaEmail;
+import com.linkcxo.signup.module.LoginPageViaEmail;
+import com.linkcxo.signup.module.SignupPageViaEmail;
 import com.linkcxo.utils.ConfigReader;
 import com.linkcxo.utils.ExcelReader;
 import com.linkcxo.utils.JsonReader;
 
 public class BaseTest extends com.linkcxo.appiumsetup.AppiumBasePageSetup {
       LoginPageViaEmail email;
+      SignupPageViaEmail sign;
 	
 	
 	@Test
@@ -21,19 +23,25 @@ public class BaseTest extends com.linkcxo.appiumsetup.AppiumBasePageSetup {
 //		String EMAIL1=json.gettestvalue("EMAIL");
 	ConfigReader con=new ConfigReader();
 
-		try {
+	try{
+	  sign =new SignupPageViaEmail(driver);
 		email=new LoginPageViaEmail(driver);
 	 
 		email.loginwithemail(con.getconfigvalue());
-		}catch(Exception e) {
-			TakeScreenShort image=new TakeScreenShort();
-			image.takeScreenshot(driver, "ERROR");
-			throw e;
-		}
+		email.otpmethod(con.getconfigvalue());
+		sign.signupwithemail();
+		
+	
+	}catch(Exception e) {
+		TakeScreenShort image=new TakeScreenShort();
+		image.takeScreenshot(driver, "ERROR");
+		throw e;
+	}
+	}
 		
 	}
 	
-}
+
 	
 	
 

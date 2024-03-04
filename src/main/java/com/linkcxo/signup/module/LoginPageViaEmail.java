@@ -1,4 +1,4 @@
-package com.linkcxo.pages;
+package com.linkcxo.signup.module;
 
 import java.io.File;
 import java.io.IOException;
@@ -22,12 +22,22 @@ public class LoginPageViaEmail {
 	
 	@FindBy(xpath = "//android.widget.TextView[@text='Continue with Email or Mobile No.']")
            WebElement Logintxt;
-	 
 	 @FindBy(xpath = "//android.widget.EditText[@text='Your Email or Mobile No']")
 	        WebElement LoginEntry;
-	 
 	 @FindBy(xpath = "//android.widget.Button[@content-desc=\"Continue to Send OTP\"]/android.widget.TextView")
 	       WebElement Loginbtn;
+	 @FindBy(id ="otp_input_0")
+	       WebElement Otptxt0;
+	 @FindBy(id ="otp_input_1")
+	       WebElement Otptxt1;
+	 @FindBy(id ="otp_input_2")
+	       WebElement Otptxt2;
+	 @FindBy(id ="otp_input_3")
+	       WebElement Otptxt3;
+	 @FindBy(id ="otp_input_4")
+	       WebElement Otptxt4;
+	 @FindBy(id ="otp_input_5")
+           WebElement Otptxt5;
 	
 	
 	public void loginwithemail(String Email) throws InterruptedException {
@@ -38,14 +48,40 @@ public class LoginPageViaEmail {
 		LoginEntry.sendKeys(Email);
 		Thread.sleep(1000);
 		Loginbtn.click();
+	} 
+	
+	public void otpmethod(String Otp) throws InterruptedException {
+		
+		Otptxt0.click();
+		Thread.sleep(1000);
+		Otptxt0.sendKeys(Otp);
+		Thread.sleep(1000);
+		Otptxt1.click();
+		Thread.sleep(1000);
+		Otptxt1.sendKeys(Otp);
+		Thread.sleep(1000);
+		Otptxt2.click();
+		Thread.sleep(1000);
+		Otptxt2.sendKeys(Otp);
+		Thread.sleep(1000);
+		Otptxt3.click();
+		Thread.sleep(1000);
+		Otptxt3.sendKeys(Otp);
+		Thread.sleep(1000);
+		Otptxt4.click();
+		Thread.sleep(1000);
+		Otptxt4.sendKeys(Otp);
+		Thread.sleep(1000);
+		Otptxt5.click();
+		Thread.sleep(1000);
+		Otptxt5.sendKeys(Otp);
+		Thread.sleep(1000);
+		
+		
+		
 	}
 		
-	 public void screenshotimage() throws IOException {
-		 File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-			String screenshotPath = "C:\\Users\\rahul\\eclipse-workspace\\LinkCxoAndroidAppVersion2Framework\\target\\websiteScreenshot.png";
-			FileUtils.moveDirectory(screenshotFile, screenshotFile);
-			 
-		 }
+	
 	
 	
 	

@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\rahul\AppData\Local\Temp\testng-eclipse--2101232782\testng-customsuite.xml</span>
+                    <span>C:\Users\rahul\AppData\Local\Temp\testng-eclipse-1344124802\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -136,8 +136,8 @@ Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, tim
 System info: host: &apos;LX-BLR-LT-002&apos;, ip: &apos;10.36.56.253&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
 Driver info: io.appium.java_client.AppiumDriver
 Capabilities {PlatformVersion: 14, app: D://LinkCxO//application.apk, appPackage: com.kailas_surve.myapp, databaseEnabled: false, desired: {PlatformVersion: 14, app: D://LinkCxO//application.apk, deviceName: LinkCxoPhone, platformName: android, udid: emulator-5554}, deviceApiLevel: 34, deviceManufacturer: Google, deviceModel: sdk_gphone64_x86_64, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 14, statBarHeight: 63, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1794, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 66576b23-2962-4b86-a6e4-20b61d54267c
-*** Element info: {Using=xpath, value=//android.widget.EditText[@text23=&apos;Your Email or Mobile No&apos;]}
+Session ID: 91f175e7-7c8b-4d61-b044-355da0b810df
+*** Element info: {Using=id, value=otp_input_0}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -154,18 +154,18 @@ Session ID: 66576b23-2962-4b86-a6e4-20b61d54267c
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElementById(DefaultGenericMobileDriver.java:69)
+	at io.appium.java_client.AppiumDriver.findElementById(AppiumDriver.java:1)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
 	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
 	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at com.linkcxo.pages.LoginPageViaEmail.loginwithemail(LoginPageViaEmail.java:38)
-	at com.linkcxo.testscript.BaseTest.linkcxo(BaseTest.java:27)
+	at com.linkcxo.signup.module.LoginPageViaEmail.otpmethod(LoginPageViaEmail.java:55)
+	at com.linkcxo.testscript.BaseTest.linkcxo(BaseTest.java:31)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -203,7 +203,7 @@ Session ID: 66576b23-2962-4b86-a6e4-20b61d54267c
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\rahul\AppData\Local\Temp\testng-eclipse--2101232782\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\rahul\AppData\Local\Temp\testng-eclipse-1344124802\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -256,12 +256,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'linkcxo')
 data.setCell(0, 2, 'com.linkcxo.testscript.BaseTest')
-data.setCell(0, 3, 23413);
+data.setCell(0, 3, 27018);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 23 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -296,11 +296,11 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">linkcxo</span>
-                <span class="method-start">9185 ms</span>
+                <span class="method-start">7442 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">32617 ms</span>
+                <span class="method-start">34465 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
